@@ -2,7 +2,7 @@
   font-family: cursive;
   font-style: normal;
   font-weight: normal;
-  src: url ('fonts/BeautifulHeart.tff') format(truetype);
+  src: url ('fonts/BeautifulHeart.tff');
 }
 
 html, body {
@@ -11,7 +11,7 @@ html, body {
 
 body {
   background: rgba(255, 36, 153, 1);
-  display: flex;
+  display: block;
   flex-direction: column;
   font-size: 18px;
 }
@@ -60,7 +60,7 @@ a[href="#"] {
 }
 
 .thumbnail-list {
-  display: flex;
+  display: block;
   flex: 0 1 auto;
   justify-content: space-between;
   list-style: none;
@@ -94,9 +94,9 @@ a[href="#"] {
 }
 
 .detail-image-title {
-  bottom: -16px;
+  bottom: 16px;
   color: white;
-  font-family: airstreamerregular;
+  font-family: BeautifulHeart;
   font-size: 40px;
   left: 4px;
   position: absolute;
