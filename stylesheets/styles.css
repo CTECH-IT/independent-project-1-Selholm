@@ -10,14 +10,14 @@ html, body {
 }
 
 body {
-  background: rgba(255, 36, 153, 1);
-  display: block;
+  background: rgba(149, 194, 215);
+  display: flex;
   flex-direction: column;
   font-size: 18px;
 }
 
 .detail-image {
-  width: 120%;
+  width: 90%;
 }
 
 .thumbnail-title {
@@ -35,7 +35,7 @@ a[href="#"] {
 
 .logo-text {
   background: white;
-  font-family: Beautiful Heart;
+  font-family: lakeshore;
   font-size: 37px;
   text-align: center;
   text-transform: uppercase;
@@ -52,6 +52,7 @@ a[href="#"] {
   display: inline-block;
   max-width: 120px;
   min-width: 120px;
+
   transition: transform 133ms ease-in-out;
 }
 
@@ -60,7 +61,7 @@ a[href="#"] {
 }
 
 .thumbnail-list {
-  display: block;
+  display: flex;
   flex: 0 1 auto;
   justify-content: space-between;
   list-style: none;
@@ -90,13 +91,14 @@ a[href="#"] {
 .detail-image-frame {
   position: relative;
   text-align: center;
+
   transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
 }
 
 .detail-image-title {
-  bottom: 16px;
+  bottom: -16px;
   color: white;
-  font-family: BeautifulHeart;
+  font-family: airstreamerregular;
   font-size: 40px;
   left: 4px;
   position: absolute;
@@ -107,9 +109,8 @@ a[href="#"] {
   transform: scale(0.001);
   transition: transform 0ms;
 }
-
 /*Hide the detail image by default*/
-.hidden-detail .detail-image-container {
+.hidden-detail .detail-image-container{
   display: none;
 }
 
@@ -124,10 +125,26 @@ a[href="#"] {
 
 @media all and (min-width: 768px) {
   .main-content {
-    flex-direction: column;
+    flex-direction: row;
     overflow: hidden;
   }
 
+  .thumbnail-list {
+    flex-direction: column;
+    margin-left: 20px;
+    order: 0;
+    padding: 0 35px;
+  }
+
+  .thumbnail-item {
+    max-width: 260px
+  }
+
+  /* every item EXCEPT the first */
+  .thumbnail-item+.thumbnail-item {
+    margin-top: 20px;
+  }
+}
   .thumbnail-list {
     flex-direction: column;
     margin-left: 20px;
@@ -141,6 +158,5 @@ a[href="#"] {
 
   /* every item EXCEPT the first */
   .thumbnail-item+.thumbnail-item {
-    margin-top: 20px;
+    margin-top: 30px;
   }
-}
