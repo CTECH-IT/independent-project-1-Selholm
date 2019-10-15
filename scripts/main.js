@@ -10,7 +10,7 @@ const ESC_KEY_CODE = 27;
 function setDetails(imageUrl, titleText) {
   'use strict';
   let detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
-  detailImage.setAttribute('src' , imageUrl);
+  detailImage.setAttribute('src', imageUrl);
 
   let detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
   detailTitle.textContent = titleText;

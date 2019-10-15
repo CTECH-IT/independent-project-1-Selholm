@@ -23,7 +23,7 @@ body {
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
   display: block;
-  font-size: 15px;
+  font-size: 18px;
   margin: 0;
   padding: 0.4em 1em;
 }
@@ -101,7 +101,7 @@ a[href="#"] {
   font-size: 40px;
   left: 4px;
   position: absolute;
-  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+  text-shadow: rgba(22, 18, 85, 0.9) -5px 9px 6px;
 }
 
 .is-tiny {
