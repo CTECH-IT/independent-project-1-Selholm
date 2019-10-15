@@ -5,12 +5,11 @@ const THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
 const HIDDEN_DETAIL_CLASS = 'hidden-detail';
 const TINY_EFFECT_CLASS = 'is tiny';
 const ESC_KEY_CODE = 27;
-
 // set the detail image and title
 function setDetails(imageUrl, titleText) {
   'use strict';
   let detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
-  detailImage.setAttribute('src', imageUrl);
+  detailImage.setAttribute('src' , imageUrl);
 
   let detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
   detailTitle.textContent = titleText;
@@ -63,18 +62,19 @@ function hideDetails() {
   document.body.classList.add(HIDDEN_DETAIL_CLASS);
 }
 
+
 //remove the CSS class from <body> to show the detail image
 
 function addKeyPressHandler() {
   'use strict';
   document.body.addEventListener('keyup', function(event) {
-      event.preventDefault();
-      console.log(event.keyCode);
-      if (event.keyCode === ESC_KEY_CODE) {
-        hideDetails();
-      }
-    });
-  }
+    event.preventDefault();
+    console.log(event.keyCode);
+    if (event.keyCode === ESC_KEY_CODE) {
+      hideDetails();
+    }
+  });
+}
 function initializeEvents() {
   'use strict';
   let thumbnails = getThumbnailsArray();

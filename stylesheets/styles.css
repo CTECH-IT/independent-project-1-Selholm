@@ -34,7 +34,7 @@ a[href="#"] {
 
 .logo-text {
   background: white;
-  font-family: 'BeautifulHeart';
+  font-family: BeautifulHeart;
   font-size: 37px;
   text-align: center;
   text-transform: uppercase;
@@ -51,6 +51,7 @@ a[href="#"] {
   display: inline-block;
   max-width: 120px;
   min-width: 120px;
+
   transition: transform 133ms ease-in-out;
 }
 
@@ -64,9 +65,8 @@ a[href="#"] {
   justify-content: space-between;
   list-style: none;
   order: 2;
-
   overflow-x: auto;
-  padding: 0;
+  padding: 20px 0;
   white-space: nowrap;
 }
 
@@ -101,7 +101,7 @@ a[href="#"] {
   font-size: 40px;
   left: 4px;
   position: absolute;
-  text-shadow: rgba(22, 18, 85, 0.9) -5px 9px 6px;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
 }
 
 .is-tiny {
@@ -129,7 +129,6 @@ a[href="#"] {
   }
 
   .thumbnail-list {
-    flex: 0 1 auto;
     flex-direction: column;
     margin-left: 20px;
     order: 0;
@@ -141,7 +140,7 @@ a[href="#"] {
   }
 
   /* every item EXCEPT the first */
-  .thumbnail-item + .thumbnail-item {
+  .thumbnail-item+.thumbnail-item {
     margin-top: 20px;
   }
 }
