@@ -16,7 +16,7 @@ body {
 }
 
 .detail-image {
-  width: 50%;
+  width: 40%;
 }
 
 .thumbnail-title {
@@ -119,7 +119,7 @@ a[href="#"] {
 }
 
 .hidden-detail .thumbnail-item {
-  max-width: 50%;
+  max-width: 30%;
 }
 
 @media all and (min-width: 768px) {
